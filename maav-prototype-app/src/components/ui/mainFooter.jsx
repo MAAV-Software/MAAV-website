@@ -14,13 +14,13 @@ export function MainFooter(){
 
     return(
         <div className="footer mt-10" style={{backgroundColor: "#3c3c3c"}}>
-            <div className="contact mt-5 mb-5 ml-20 mr-20 text-2xl">
-                <h1 className="font-bold">Contact</h1> <br />
-                <p>2603 Draper Dr, Ann Arbor, MI, 48109</p> <br/>
-                <p>maav-leads@umich.edu</p>
+            <div className="contact mt-5 mb-5 ml-20 mr-20">
+                <h1 className="font-bold text-2xl">Contact</h1> <br />
+                <p className="text-l">2603 Draper Dr, Ann Arbor, MI, 48109</p> <br/>
+                <p className="text-l">maav-leads@umich.edu</p>
             </div>
-            <div className="navigation mt-5 mb-5 ml-20 mr-20 text-2xl">
-                <h1 className="font-bold">Navigation</h1> <br />
+            <div className="navigation mt-5 mb-5 ml-20 mr-20">
+                <h1 className="font-bold  text-2xl">Navigation</h1> <br />
                 <button
                     type="button"
                     onMouseEnter={handleHover}

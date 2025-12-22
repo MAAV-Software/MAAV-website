@@ -26,7 +26,7 @@ export default function Subteam(){
 
             <img className="w-screen mb-[5vh]" src="/images/subteams-thumbnail.png"></img>
 
-            <div className="flex flex-row mb-20 text-white">
+            <div className="page-header flex flex-row mb-20 text-white">
                 <button
                     type="button"
                     onMouseEnter={handleHover}

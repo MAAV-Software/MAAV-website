@@ -8,16 +8,15 @@ export default function About(){
     return(
         <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans" style={{ backgroundColor: "black" }}>
             <MainHeader />
-            <h1 className="page-header absolute top-25 text-4xl font-bold text-white">
+            <h1 className="page-header absolute top-25 text-4xl w-[20vw] h-[10vh] font-bold border-2 border-yellow-500 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: "#3c3c3c" }}>
                 About
             </h1>
 
+            <img className="w-screen mb-[5vh]" src="/images/team-pic.png"></img>
+
+            <h1 className="page-header text-white mb-10 text-left">Who we Are</h1>
+
             <div className="page-body text-white">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
                 Michigan Autonomous Aerial Vehicles (MAAV) is a student-run group at the University of Michigan <br />
                 that is participating in the IARC Competition. Members of MAAV engage in the design, building, and testing <br />
                 of an autonomous unmanned aerial system (UAS) while furthering multiple areas of <br/>
