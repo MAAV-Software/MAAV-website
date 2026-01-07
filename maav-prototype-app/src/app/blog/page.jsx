@@ -17,22 +17,24 @@ export default function Blog(){
 
     return(
 
-        <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans" style={{ backgroundColor: "black" }}>
+        <div className="page" style={{ backgroundColor: "black" }}>
             <MainHeader />
-            <div className="page-header absolute top-25 text-4xl w-[20vw] h-[10vh] font-bold border-2 border-yellow-500 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: "#3c3c3c" }}>
-                Blog
+            <div className="header" style={{backgroundImage: "url(/images/maav-mair.png)", aspectRatio: 1673 / 709}}>
+                <h1 className="image-title">
+                    Blog
+                </h1>
             </div>
 
-            <div className="highlight-post mt-[35vh]">
-                <h1 className="text-white text-center font-bold text-4xl">
+            <div className="highlight-post">
+                <h1 className="page-header">
                     Newest Post
                 </h1>
 
-                <div className="page-body text-white text-2xl">
+                <div className="page-body">
                     Computer Vision Detection Progress
                 </div>
 
-                <img className="w-[25vw]" src="/images/blog-images/cv-post-thumnail.jpg"></img>
+                <img className="thumbnail" src="/images/blog-images/cv-post-thumnail.jpg"></img>
                 
                 <button
                     type="button"

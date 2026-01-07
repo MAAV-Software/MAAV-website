@@ -4,15 +4,15 @@ import {MainFooter} from "../../../components/ui/mainFooter";
 
 export default function Structures(){
     return(
-        <div div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans" style={{ backgroundColor: "black" }}>
+        <div div className="page" style={{ backgroundColor: "black" }}>
             <MainHeader />
-            <h1 className="page-header absolute top-25 text-4xl w-[20vw] h-[10vh] font-bold border-2 border-yellow-500 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: "#3c3c3c" }}>
-                Structures
-            </h1>
+            <div className="header" style={{backgroundImage: "url(/images/structures-thumbnail.png)", aspectRatio: 2809 / 1022}}>
+                <h1 className="image-title">
+                    Structures
+                </h1>
+            </div>
 
-            <img className='w-screen' src="/images/structures-thumbnail.png"></img>
-
-            <div className='page-header text-white mt-10 mb-10'>
+            <div className='page-header'>
                 The Frame
             </div>
 

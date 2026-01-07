@@ -4,88 +4,92 @@ import {MainFooter} from "../../components/ui/mainFooter";
 
 export default function Leads(){
     return(
-        <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans" style={{ backgroundColor: "black" }}>
+        <div className="page">
             <MainHeader />
-            <div className="page-header absolute top-25 text-4xl w-[20vw] h-[10vh] font-bold border-2 border-yellow-500 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: "#3c3c3c" }}>
-                Leads
+            <div className="header" style={{backgroundImage: "url(/images/maav-mair.png)", aspectRatio: 1673 / 709}}>
+                <h1 className="image-title">
+                    Leads
+                </h1>
             </div>
-            <img className='w-screen' src="/images/maav-mair.png"></img>
 
-            <div className='page-header text-white mt-10 mb-10'>
+            <div className='page-header'>
                 Current Leads
             </div>
 
-            <div className='leads mb-[3vw]'>
+            <div className='leads'>
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/output-onlinepngtools.png"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
+                    <p className='lead-description'>
                         Eli Goreta <br />
-                        President
+                        <span style={{ fontWeight: 'normal' }}>President</span>
                     </p>
                 </div>
 
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/output-onlinepngtools.png"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
+                    <p className='lead-description'>
                         Ian Stough <br />
-                        Vice President
+                        <span style={{ fontWeight: 'normal' }}>Vice President</span>
                     </p>
                 </div>
+            </div>
+
+            <div className='leads'>
 
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/output-onlinepngtools.png"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
+                    <p className='lead-description'>
                         Vishal Dattathreya <br />
-                        Secretarian
+                        <span style={{ fontWeight: 'normal' }}>Secretarian</span>
                     </p>
                 </div>
 
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/output-onlinepngtools.png"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
+                    <p className='lead-description'>
                         Rahil Bhavan <br />
-                        Treasurer
+                        <span style={{ fontWeight: 'normal' }}>Treasurer</span>
                     </p>
                 </div>
 
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/output-onlinepngtools.png"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
+                    <p className='lead-description'>
                         Sandeep Sawhney <br />
-                        Head of Public Relations
+                        <span style={{ fontWeight: 'normal' }}>Public Relations Lead</span>
                     </p>
                 </div>
             </div>
 
             <div className="leads">
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/output-onlinepngtools.png"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
+                    <p className='lead-description'>
                         Enrique Vezga <br />
-                        Structures Subteam Lead
+                        <span style={{ fontWeight: 'normal' }}>Structures Lead</span>
                     </p>
                 </div>
 
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/output-onlinepngtools.png"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
+                    <p className='lead-description'>
                         James Spielman <br />
-                        Embedded Systems Subteam Lead
+                        <span style={{ fontWeight: 'normal' }}>Embedded Systems Lead</span>
                     </p>
                 </div>
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/dervin-photo.JPG"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/dervin-photo.JPG"></img>
+                    <p className='lead-description'>
                         Dervin Tian <br />
-                        Software Subteam Co-Lead
+                        <span style={{ fontWeight: 'normal' }}>Software Co-Lead</span>
                     </p>
                 </div>
 
                 <div className='lead'>
-                    <img className="lead-photo w-[15vw] mt-10" src="/images/output-onlinepngtools.png"></img>
-                    <p className='text-white text-center'>
+                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
+                    <p className='lead-description'>
                         Habib Shakour <br />
-                        Software Subteam Co-Lead
+                        <span style={{ fontWeight: 'normal' }}>Software Co-Lead</span>
                     </p>
                 </div>
             </div>

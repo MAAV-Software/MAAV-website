@@ -14,52 +14,53 @@ export function MainFooter(){
 
     return(
         <div className="footer mt-10" style={{backgroundColor: "#3c3c3c"}}>
-            <div className="contact mt-5 mb-5 ml-20 mr-20">
-                <h1 className="font-bold text-2xl">Contact</h1> <br />
-                <p className="text-l">2603 Draper Dr, Ann Arbor, MI, 48109</p> <br/>
-                <p className="text-l">maav-leads@umich.edu</p>
+            <div className="footer-section">
+                <h1 className="footer-header">Contact</h1> <br />
+                <p className="footer-content">2603 Draper Dr, Ann Arbor, MI, 48109</p> <br/>
+                <p className="footer-content">maav-leads@umich.edu</p>
             </div>
-            <div className="navigation mt-5 mb-5 ml-20 mr-20">
-                <h1 className="font-bold  text-2xl">Navigation</h1> <br />
+            
+            <div className="footer-section">
+                <h1 className="footer-header">Navigation</h1> <br />
                 <button
                     type="button"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleLeave}
                     onClick={() => {window.location.href = "./about"}}
-                    className="w-15 h-5"
+                    className="w-auto h-auto"
                 >
-                    About
+                    <p className="footer-content">About</p>
                 </button> <br />
                 <button
                     type="button"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleLeave}
                     onClick={() => {window.location.href = "./subteams"}}
-                    className="w-20 h-5"
+                    className="w-auto h-auto"
                 >
-                    Subteams
+                    <p className="footer-content">Subteams</p>
                 </button> <br />
                 <button
                     type="button"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleLeave}
                     onClick={() => {window.location.href = "./leads"}}
-                    className="w-15 h-5"
+                    className="w-auto h-auto"
                 >
-                    Leads
+                    <p className="footer-content">Leads</p>
                 </button> <br />
                 <button
                     type="button"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleLeave}
                     onClick={() => {window.location.href = "./sponsors"}}
-                    className="w-20 h-5"
+                    className="w-auto h-auto"
                 >
-                    Sponsors
+                    <p className="footer-content">Sponsors</p>
                 </button> <br />
             </div>
-            <div className="socials mt-5 mb-5 ml-20 mr-20 text-2xl">
-                <h1 className="font-bold">Socials</h1> <br />
+            <div className="footer-section">
+                <h1 className="footer-header">Socials</h1> <br />
                 <a href="https://www.instagram.com/umichmaav?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                     <img className="w-[3vw]" src="/images/new-instagram-logo-glyph.png"></img>
                 </a>

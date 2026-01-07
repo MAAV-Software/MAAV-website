@@ -23,10 +23,10 @@ export function InstagramEmbed( ) {
 
   return (
     <blockquote
-      className="instagram-media"
+      className="instagram-media w-full"
       data-instgrm-permalink="https://www.instagram.com/umichmaav/"
       data-instgrm-version="14"
-      style={{ maxWidth: "540px", width: "100%" }}
+      style={{ maxWidth: "100%", width: "auto", minHeight: "500px", paddingRight: "1em"}}
     ></blockquote>
   );
 }
@@ -36,41 +36,38 @@ export function InstagramEmbed( ) {
 export function MainCanvas(){
 
     return(
-        <div className="page">
-            <div className="text-white">
-                <h1 className="page-header mt-10 text-left text-4xl font-bold">
-                    Michigan Autonomous Aerial Vehicles
-                </h1>
+        <div className="canvas">
 
-                <div className="page-body mt-10 text-left">
-                    Michigan Autonomous Aerial Vehicles (MAAV) <br>
-                    </br>is a student-run project team at the University of Michigan <br>
-                    </br> that annually competes with teams internationally in the <br>
-                    </br>International Aerial Robotics Competition (IARC) Competition.
+              <h1 className="canvas-header">
+                  Michigan Autonomous Aerial Vehicles
+              </h1>
 
-                    <br>
-                    </br>
-                    <br>
-                    </br>MAAV strives to provide practical, hands-on experience students <br>
-                    </br> by competing annually in the IARC Competition. <br>
-                    </br>Members of MAAV engage in the design, building, and testing <br>
-                    </br> of an autonomous unmanned aerial system (UAS) while furthering <br>
-                    </br>multiple areas of Computer Science, Embedded Systems, <br>
-                    </br>Mechanical Engineering, and Aerospace Engineering research.
+              <div className="canvas-body text-left">
+                  Michigan Autonomous Aerial Vehicles (MAAV)
+                  is a student-run project team at the University of Michigan
+                  that annually competes with teams internationally in the
+                  International Aerial Robotics Competition (IARC) Competition.
 
-                    <div>
-                        <InstagramEmbed />
-                    </div>
+                  <br/>
+                  <br/>
+                  MAAV strives to provide practical, hands-on experience students
+                  by competing annually in the IARC Competition.
+                  Members of MAAV engage in the design, building, and testing
+                  of an autonomous unmanned aerial system (UAS) while furthering
+                  multiple areas of Computer Science, Embedded Systems,
+                  Mechanical Engineering, and Aerospace Engineering research.
 
-                </div>
+                  <div className="insta-link">
+                      <InstagramEmbed />
+                  </div>
 
             </div>
 
-            <div className="h-[50vh] w-[85vw] border-4 rounded-xl border-white mt-10">
+            <div className="drone-model">
                 <Canvas
                     shadow
                     dpr={[1,2]}
-                    camera={{fov: 55, position: [0, 0, 6]}}
+                    camera={{fov: 55, position: [0, 0, 9]}}
                 >
                     <Environment files="/images/ashphalt.jpg" />
                     <MainScene />
