@@ -9,7 +9,7 @@ export default function Sponsors(){
             <div className="page-header absolute top-25 text-4xl w-[20vw] h-[10vh] font-bold border-2 border-yellow-500 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor: "#3c3c3c" }}>
                 Sponsors
             </div>
-            <img src="/images/maav-mair.png"></img>
+            <img className='w-screen' src="/images/maav-mair.png"></img>
 
             <div className='page-body text-white mt-10 mb-10'>
                 Our work would not be possible without the generous support of our various sponsors. <br />

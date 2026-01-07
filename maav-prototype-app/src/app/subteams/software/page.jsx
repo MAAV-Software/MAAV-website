@@ -10,7 +10,7 @@ export default function Software(){
                 Software
             </h1>
 
-            <img src="/images/software-thumbnail.png"></img>
+            <img className="w-screen" src="/images/software-thumbnail.png"></img>
 
             <div className='page-header text-white text-left mt-10 mb-10'>
                 Computer Vision

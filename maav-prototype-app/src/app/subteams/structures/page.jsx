@@ -10,7 +10,7 @@ export default function Structures(){
                 Structures
             </h1>
 
-            <img src="/images/structures-thumbnail.png"></img>
+            <img className='w-screen' src="/images/structures-thumbnail.png"></img>
 
             <div className='page-header text-white mt-10 mb-10'>
                 The Frame

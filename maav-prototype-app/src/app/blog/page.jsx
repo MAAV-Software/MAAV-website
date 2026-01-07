@@ -32,13 +32,13 @@ export default function Blog(){
                     Computer Vision Detection Progress
                 </div>
 
-                <img className="w-[25vw]" src="images/cv-post-thumnail.jpg"></img>
+                <img className="w-[25vw]" src="/images/blog-images/cv-post-thumnail.jpg"></img>
                 
                 <button
                     type="button"
                     onMouseEnter={handleHover}
                     onMouseLeave={handleLeave}
-                    onClick={() => {window.location.href = "./blog/blogs/"}}
+                    onClick={() => {window.location.href = "/posts/cv-progress/"}}
                     className="w-45 h-5"
                 >
                     <p className='text-3xl text-white text-center'>Read More</p>

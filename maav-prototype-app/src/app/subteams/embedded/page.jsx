@@ -10,7 +10,7 @@ export default function Embedded(){
                 Embedded
             </h1>
 
-            <img src="/images/embedded-thumbnail.png"></img>
+            <img className="w-screen" src="/images/embedded-thumbnail.png"></img>
 
             <div className='page-header text-white mt-10 mb-10'>
                 Circuitry
