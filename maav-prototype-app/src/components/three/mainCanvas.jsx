@@ -69,6 +69,7 @@ export function MainCanvas(){
                     dpr={[1,2]}
                     camera={{fov: 55, position: [0, 0, 9]}}
                 >
+                  <color attach="background" args={['#f0f0f0']} />
                     <Environment files="/images/ashphalt.jpg" />
                     <MainScene />
 
