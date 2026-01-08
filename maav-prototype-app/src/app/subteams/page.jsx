@@ -60,9 +60,9 @@ export default function Subteam(){
             </div>
 
             <div className="page-body">
-                We've broken down our work into smaller groups, each focusing on one of three key parts <br /> 
-                of the project: software, structures, and embedded systems. Each group handles a specific part, led by a team lead. <br />
-                These leads are in charge of keeping their group on track to hit their goals. <br />
+                We've broken down our work into smaller groups, each focusing on one of three key parts
+                of the project: software, structures, and embedded systems. Each group handles a specific part, led by a team lead.
+                These leads are in charge of keeping their group on track to hit their goals.
             </div>
 
             <MainFooter />

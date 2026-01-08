@@ -30,7 +30,7 @@ export function MainHeader(){
                     >
                         About
                     </button>
-                    <button
+                    {/* <button
                         type="button"
                         onMouseEnter={handleHover}
                         onMouseLeave={handleLeave}
@@ -38,7 +38,7 @@ export function MainHeader(){
                         className="w-auto h-auto"
                     >
                         Subteams
-                    </button>
+                    </button> */}
                     <button
                         type="button"
                         onMouseEnter={handleHover}

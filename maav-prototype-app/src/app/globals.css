@@ -87,17 +87,23 @@ body {
   flex-direction: row;
   font-family: "Argent", serif;
   color: black;
-  justify-content: left;
+  justify-content: space-between;
   overflow-x: auto;        /* allow horizontal scrolling if needed */
   -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
   padding-left: 1em;
   padding-right: 1em;
+  gap: 2em;
 }
 
 .footer-section {
   color: black;
   font-size: 1em;
-  width: 33%;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 25%;
 }
 
 .footer-header {
@@ -197,6 +203,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  font-family: "Argent", serif;
 }
 
 .page-header {
@@ -214,6 +221,7 @@ body {
   padding: 1em;
   display: flex;
   justify-content: center;
+  font-family: "Argent", serif;
 }
 
 .image-title {
@@ -242,6 +250,7 @@ body {
   gap: 0.5em;
   justify-content: center;
   padding-top: 0.5em;
+  color: white;
 }
 
 .leads {
@@ -309,6 +318,37 @@ body {
 .thumbnail {
   display: flex;
   width: 25vw;
+}
+
+.subteam-section {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.subteam-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.subteam-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.homepage-body {
+  font-size: 1em;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  font-family: "Argent", serif;
 }
 
 @media(min-width: 1000px){
@@ -395,16 +435,9 @@ body {
 }
 
 .page-body {
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 2em;
-}
-
-.subteam-subheader {
-  font-size: 3em;
-  display: flex;
-  gap: 0.75em;
-  justify-content: center;
-  padding-top: 0.75em;
+  max-width: 100%;
 }
 
 .leads {
@@ -443,4 +476,33 @@ body {
   width: 15vw;
 }
 
+.subteam-subheader {
+  font-size: 3em;
+  display: flex;
+  gap: 0.75em;
+  justify-content: left;
+  padding-left: 1em;
+  padding-top: 0.75em;
+}
+
+.subteam-section {
+  justify-content: left;
+  text-align: left;
+}
+
+.subteam-content {
+  justify-content: left;
+  text-align: left;
+  flex-direction: row;
+}
+
+.subteam-pic {
+  max-width: 100%;
+}
+
+.homepage-body {
+  font-size: 1.5em;
+  padding: 2em;
+  max-width: 50%;
+}
 }
