@@ -1,54 +1,49 @@
 "use client"
 import React from 'react'
-import {MainHeader} from "../../components/ui/mainHeader";
-import {MainFooter} from "../../components/ui/mainFooter";
+import Link from 'next/link'
+import { MainHeader } from "../../components/ui/mainHeader"
+import { MainFooter } from "../../components/ui/mainFooter"
 
-export default function Blog(){
+export default function Blog() {
+  return (
+    <div>
+      <MainHeader />
 
-    const handleHover = (e) => {
-        console.log('Mouse hovered!');
-        e.target.style.textDecoration = "underline";
-    }
+      <div
+        className="page-hero"
+        style={{ backgroundImage: "url(/images/maav-mair.png)" }}
+      >
+        <h1 className="page-hero-title">BLOG</h1>
+      </div>
 
-    const handleLeave = (e) => {
-        console.log('Mouse left!');
-        e.target.style.textDecoration = "none";
-    }
-
-    return(
-
-        <div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
-            <div className="header" style={{backgroundImage: "url(/images/maav-mair.png)", aspectRatio: 1673 / 709}}>
-                <h1 className="image-title">
-                    Blog
-                </h1>
+      <div className="blog-content">
+        <article className="blog-featured">
+          <img
+            className="blog-featured-image"
+            src="/images/blog-images/cv-post-thumnail.jpg"
+            alt="Computer Vision Detection Progress"
+          />
+          <div className="blog-featured-body">
+            <div className="blog-featured-label">
+              <span className="blog-featured-dot" />
+              <span className="blog-featured-tag">Latest Post</span>
             </div>
+            <h2 className="blog-featured-title">Computer Vision Detection Progress</h2>
+            <p className="blog-featured-excerpt">
+              An update on our computer vision detection system and the progress we've made
+              in developing autonomous navigation capabilities for our drone.
+            </p>
+            <Link href="/posts/cv-progress/" className="blog-read-more">
+              Read More
+              <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
+        </article>
+      </div>
 
-            <div className="highlight-post">
-                <h1 className="page-header">
-                    Newest Post
-                </h1>
-
-                <div className="page-body">
-                    Computer Vision Detection Progress
-                </div>
-
-                <img className="thumbnail" src="/images/blog-images/cv-post-thumnail.jpg"></img>
-                
-                <button
-                    type="button"
-                    onMouseEnter={handleHover}
-                    onMouseLeave={handleLeave}
-                    onClick={() => {window.location.href = "/posts/cv-progress/"}}
-                    className="w-45 h-5"
-                >
-                    <p className='text-3xl text-white text-center'>Read More</p>
-                </button>
-            
-            </div>
-            <MainFooter />
-
-        </div>
-    );
+      <MainFooter />
+    </div>
+  )
 }

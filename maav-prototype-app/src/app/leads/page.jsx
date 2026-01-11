@@ -1,99 +1,117 @@
-import React from 'react'
-import {MainHeader} from "../../components/ui/mainHeader";
-import {MainFooter} from "../../components/ui/mainFooter";
+"use client"
+import React, { useEffect, useRef } from 'react'
+import { MainHeader } from "../../components/ui/mainHeader"
+import { MainFooter } from "../../components/ui/mainFooter"
 
-export default function Leads(){
-    return(
-        <div className="page">
-            <MainHeader />
-            <div className="header" style={{backgroundImage: "url(/images/maav-mair.png)", aspectRatio: 1673 / 709}}>
-                <h1 className="image-title">
-                    Leads
-                </h1>
+const leads = {
+  executive: [
+    { name: "Eli Goreta", role: "President", photo: "/images/output-onlinepngtools.png", primary: true },
+  ],
+  vicePresident: [
+    { name: "Ian Stough", role: "Vice President", photo: "/images/output-onlinepngtools.png" },
+  ],
+  operations: [
+    { name: "Vishal Dattathreya", role: "Secretary", photo: "/images/output-onlinepngtools.png" },
+    { name: "Rahil Bhavan", role: "Treasurer", photo: "/images/output-onlinepngtools.png" },
+    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/output-onlinepngtools.png" },
+  ],
+  teamLeads: [
+    { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/output-onlinepngtools.png" },
+    { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/output-onlinepngtools.png" },
+    { name: "Dervin Tian", role: "Co-Lead", team: "Software", photo: "/images/dervin-photo.JPG" },
+    { name: "Habib Shakour", role: "Co-Lead", team: "Software", photo: "/images/output-onlinepngtools.png" },
+  ],
+}
+
+function LeadCard({ lead, delay = 0 }) {
+  return (
+    <div
+      className={`lead-card scroll-animate ${lead.primary ? 'lead-primary' : ''}`}
+      style={{ transitionDelay: `${delay * 0.1}s` }}
+    >
+      <img className="lead-card-photo" src={lead.photo} alt={lead.name} />
+      <h3 className="lead-card-name">{lead.name}</h3>
+      <span className="lead-card-role">{lead.role}</span>
+      {lead.team && <span className="lead-card-team">{lead.team}</span>}
+    </div>
+  )
+}
+
+export default function Leads() {
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    const elements = containerRef.current?.querySelectorAll('.scroll-animate')
+    elements?.forEach((el) => observer.observe(el))
+
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <div>
+      <MainHeader />
+
+      <div
+        className="page-hero"
+        style={{ backgroundImage: "url(/images/maav-mair.png)" }}
+      >
+        <h1 className="page-hero-title">LEADERSHIP</h1>
+      </div>
+
+      <section className="section" ref={containerRef}>
+        <div className="section-container">
+          <header className="section-header">
+            <div className="section-label">
+              <span className="section-label-line" />
+              <span className="section-label-text">2024-2025</span>
+            </div>
+            <h2 className="section-title">CURRENT LEADERSHIP TEAM</h2>
+          </header>
+
+          <div className="leads-pyramid">
+            {/* President - Top of pyramid */}
+            <div className="leads-row">
+              {leads.executive.map((lead, i) => (
+                <LeadCard key={lead.name} lead={lead} delay={i} />
+              ))}
             </div>
 
-            <div className='page-header'>
-                Current Leads
+            {/* Vice President */}
+            <div className="leads-row">
+              {leads.vicePresident.map((lead, i) => (
+                <LeadCard key={lead.name} lead={lead} delay={i + 1} />
+              ))}
             </div>
 
-            <div className='leads'>
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
-                    <p className='lead-description'>
-                        Eli Goreta <br />
-                        <span style={{ fontWeight: 'normal' }}>President</span>
-                    </p>
-                </div>
-
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
-                    <p className='lead-description'>
-                        Ian Stough <br />
-                        <span style={{ fontWeight: 'normal' }}>Vice President</span>
-                    </p>
-                </div>
+            {/* Operations - Secretary, Treasurer, PR */}
+            <div className="leads-row">
+              {leads.operations.map((lead, i) => (
+                <LeadCard key={lead.name} lead={lead} delay={i + 2} />
+              ))}
             </div>
 
-            <div className='leads'>
-
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
-                    <p className='lead-description'>
-                        Vishal Dattathreya <br />
-                        <span style={{ fontWeight: 'normal' }}>Secretarian</span>
-                    </p>
-                </div>
-
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
-                    <p className='lead-description'>
-                        Rahil Bhavan <br />
-                        <span style={{ fontWeight: 'normal' }}>Treasurer</span>
-                    </p>
-                </div>
-
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
-                    <p className='lead-description'>
-                        Sandeep Sawhney <br />
-                        <span style={{ fontWeight: 'normal' }}>Public Relations Lead</span>
-                    </p>
-                </div>
+            {/* Team Leads - Bottom of pyramid */}
+            <div className="leads-row">
+              {leads.teamLeads.map((lead, i) => (
+                <LeadCard key={lead.name} lead={lead} delay={i + 5} />
+              ))}
             </div>
-
-            <div className="leads">
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
-                    <p className='lead-description'>
-                        Enrique Vezga <br />
-                        <span style={{ fontWeight: 'normal' }}>Structures Lead</span>
-                    </p>
-                </div>
-
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
-                    <p className='lead-description'>
-                        James Spielman <br />
-                        <span style={{ fontWeight: 'normal' }}>Embedded Systems Lead</span>
-                    </p>
-                </div>
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/dervin-photo.JPG"></img>
-                    <p className='lead-description'>
-                        Dervin Tian <br />
-                        <span style={{ fontWeight: 'normal' }}>Software Co-Lead</span>
-                    </p>
-                </div>
-
-                <div className='lead'>
-                    <img className="lead-photo" src="/images/output-onlinepngtools.png"></img>
-                    <p className='lead-description'>
-                        Habib Shakour <br />
-                        <span style={{ fontWeight: 'normal' }}>Software Co-Lead</span>
-                    </p>
-                </div>
-            </div>
-            <MainFooter />
+          </div>
         </div>
-    );
+      </section>
+
+      <MainFooter />
+    </div>
+  )
 }
