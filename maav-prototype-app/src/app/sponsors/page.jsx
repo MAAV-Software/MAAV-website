@@ -5,7 +5,6 @@ import {MainFooter} from "../../components/ui/mainFooter";
 export default function Sponsors(){
     return(
         <div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
             <div className="header" style={{backgroundImage: "url(/images/maav-mair.png)", aspectRatio: 1673 / 709}}>
                 <h1 className="image-title">
                     Sponsors
@@ -24,7 +23,6 @@ export default function Sponsors(){
                 <img className="sponsor-pic" src="/images/Raytheon-Logo.png"></img>
             </div>
 
-            <MainFooter />
         </div>
     );
 }

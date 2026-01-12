@@ -7,7 +7,6 @@ export default function About(){
 
     return(
         <div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
 
             <div className="header" style={{backgroundImage: "url(/images/team-pic.png)", aspectRatio: 2809 / 1022}}>
                 <h1 className="image-title">
@@ -28,7 +27,6 @@ export default function About(){
                 but were unable to get a working flight demo with autonomous control. Going to competition this year was our main focus;
                 we are thrilled with our progress the past few years and are excited to compete!
             </div>
-            <MainFooter />
         </div>
     );
 }

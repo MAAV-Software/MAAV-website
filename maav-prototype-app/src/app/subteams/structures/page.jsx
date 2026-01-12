@@ -5,7 +5,6 @@ import {MainFooter} from "../../../components/ui/mainFooter";
 export default function Structures(){
     return(
         <div div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
             <div className="header" style={{backgroundImage: "url(/images/structures-thumbnail.png)", aspectRatio: 2809 / 1022}}>
                 <h1 className="image-title">
                     Structures
@@ -22,7 +21,6 @@ export default function Structures(){
                 components. To build, we use carbon fiber layups, machining , and additive manufacturing processes. <br />
                 To test, we fly [and crash] the vehicle at the MAir outdoor test facility to ensure the structural integrity. <br />
             </div>
-            <MainFooter />
         </div>
     );
 }

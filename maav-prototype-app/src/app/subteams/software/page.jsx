@@ -5,7 +5,6 @@ import {MainFooter} from "../../../components/ui/mainFooter";
 export default function Software(){
     return(
         <div div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
             <div className="header" style={{backgroundImage: "url(/images/software-thumbnail.png)", aspectRatio: 2809 / 1022}}>
                 <h1 className="image-title">
                     Software
@@ -53,7 +52,6 @@ export default function Software(){
                 <img className="w-[10vw]" src="/images/Python-logo.png"></img>
                 <img className="w-[10vw]" src="/images/C++_Logo.png"></img>
             </div>
-            <MainFooter />
         </div>
     );
 }

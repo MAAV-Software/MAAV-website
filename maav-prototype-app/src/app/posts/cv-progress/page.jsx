@@ -9,7 +9,6 @@ import {Mine} from "../../../components/three/modelPfm1"
 export default function CVPost(){
     return(
         <div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
 
             <div className="header" style={{backgroundImage: "url(/images/maav-mair.png)", aspectRatio: 1673 / 709}}>
                 <h1 className="image-title">
@@ -110,7 +109,6 @@ export default function CVPost(){
                 system that allows the drones to unify their results into one plot where we can see all of the detections across all the drones.  
             </div>
             
-            <MainFooter />
         </div>
     );
 }

@@ -18,7 +18,6 @@ export default function Blog(){
     return(
 
         <div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
             <div className="header" style={{backgroundImage: "url(/images/maav-mair.png)", aspectRatio: 1673 / 709}}>
                 <h1 className="image-title">
                     Blog
@@ -47,7 +46,6 @@ export default function Blog(){
                 </button>
             
             </div>
-            <MainFooter />
 
         </div>
     );

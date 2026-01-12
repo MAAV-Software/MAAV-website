@@ -5,15 +5,14 @@ import {MainFooter} from "../../components/ui/mainFooter";
 export default function Leads(){
     return(
         <div className="page">
-            <MainHeader />
             <div className="header" style={{backgroundImage: "url(/images/maav-mair.png)", aspectRatio: 1673 / 709}}>
                 <h1 className="image-title">
-                    Leads
+                    Board
                 </h1>
             </div>
 
             <div className='page-header'>
-                Current Leads
+                Current Board
             </div>
 
             <div className='leads'>
@@ -93,7 +92,6 @@ export default function Leads(){
                     </p>
                 </div>
             </div>
-            <MainFooter />
         </div>
     );
 }

@@ -18,7 +18,6 @@ export default function Subteam(){
 
     return(
         <div div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
             
             <div className="header" style={{backgroundImage: "url(/images/subteams-thumbnail.png)", aspectRatio: 2809 / 1022}}>
                 <h1 className="image-title">
@@ -65,7 +64,6 @@ export default function Subteam(){
                 These leads are in charge of keeping their group on track to hit their goals.
             </div>
 
-            <MainFooter />
         </div>
     );
 }

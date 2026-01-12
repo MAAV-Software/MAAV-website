@@ -142,10 +142,16 @@ body {
   font-family: "Argent", serif;
 }
 
+.above-drone {
+  z-index: 1;
+}
+
 .canvas{
   display: flex;
   flex-direction: column;
   color: white;
+  height: auto;
+  padding-top: 50vh;
 }
 
 .canvas-header{
@@ -175,6 +181,11 @@ body {
   max-width: 100%;
 }
 
+.canvas-page {
+  z-index: 1;
+  position: absolute;
+}
+
 .insta-link {
   height: 100%;
 }
@@ -186,15 +197,15 @@ body {
 
 .drone-model {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  border: 0.2em solid white;
   border-color: white;
-  width: 85vw;
-  max-width: 85%;
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 15vh;
 }
 
 .page {
@@ -351,6 +362,17 @@ body {
   font-family: "Argent", serif;
 }
 
+.click-text {
+  background-color: white;
+  font-size: 1em;
+  color: black;
+  z-index: 1;
+  padding: 1em;
+  height: 15%;
+  opacity: 0.85;
+  display: flex;
+}
+
 @media(min-width: 1000px){
   .logo {
     height: 20vh;
@@ -375,14 +397,16 @@ body {
   justify-content: left;
   padding-left: 1em;
   padding-right: 1em;
+  display: flex;
+  position: relative;
 }
 
 .canvas-body{
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Argent", serif;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 3em;
   color: white;
   justify-content: space-between;
@@ -406,6 +430,7 @@ body {
   padding-right: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
+  z-index: 1;
 }
 
 .footer-header {
@@ -483,6 +508,7 @@ body {
   justify-content: left;
   padding-left: 1em;
   padding-top: 0.75em;
+  font-family: "Argent", serif;
 }
 
 .subteam-section {
@@ -494,6 +520,7 @@ body {
   justify-content: left;
   text-align: left;
   flex-direction: row;
+  font-size: 1em;
 }
 
 .subteam-pic {
@@ -504,5 +531,23 @@ body {
   font-size: 1.5em;
   padding: 2em;
   max-width: 50%;
+}
+
+.click-text {
+  background-color: white;
+  font-size: 2em;
+  color: black;
+  z-index: 1;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1em;
+  width: 25%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.canvas-page {
+  z-index: 1;
+  position: absolute;
 }
 }

@@ -30,15 +30,15 @@ export function MainHeader(){
                     >
                         About
                     </button>
-                    {/* <button
+                    <button
                         type="button"
                         onMouseEnter={handleHover}
                         onMouseLeave={handleLeave}
-                        onClick={() => {window.location.href = "/subteams"}}
+                        onClick={() => {window.location.href = "/drone"}}
                         className="w-auto h-auto"
                     >
-                        Subteams
-                    </button> */}
+                        Drone
+                    </button>
                     <button
                         type="button"
                         onMouseEnter={handleHover}
@@ -46,7 +46,7 @@ export function MainHeader(){
                         onClick={() => {window.location.href = "/leads"}}
                         className="w-auto h-auto"
                     >
-                        Leads
+                        Board
                     </button>
                     <button
                         type="button"

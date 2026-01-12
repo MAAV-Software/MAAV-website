@@ -5,7 +5,6 @@ import {MainFooter} from "../../../components/ui/mainFooter";
 export default function Embedded(){
     return(
         <div div className="page" style={{ backgroundColor: "black" }}>
-            <MainHeader />
             <div className="header" style={{backgroundImage: "url(/images/embedded-thumbnail.png)", aspectRatio: 1673 / 709}}>
                 <h1 className="image-title">
                     Embedded Systems
@@ -33,7 +32,6 @@ export default function Embedded(){
                 components into a cohesive product. <br />
             </div>
 
-            <MainFooter />
         </div>
     );
 }
