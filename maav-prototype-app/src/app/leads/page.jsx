@@ -74,7 +74,7 @@ export default function Leads() {
           <header className="section-header">
             <div className="section-label">
               <span className="section-label-line" />
-              <span className="section-label-text">2024-2025</span>
+              <span className="section-label-text">2025-2026</span>
             </div>
             <h2 className="section-title">CURRENT LEADERSHIP TEAM</h2>
           </header>
