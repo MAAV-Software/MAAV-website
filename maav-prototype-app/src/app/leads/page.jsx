@@ -8,7 +8,7 @@ const leads = {
     { name: "Eli Goreta", role: "President", photo: "/images/headshots/IMG_2506.jpg", primary: true },
   ],
   vicePresident: [
-    { name: "Ian Stough", role: "Vice President", photo: "/images/headshots/6v6A1219_Original.jpg" },
+    { name: "Ian Stough", role: "Vice President", photo: "/images/headshots/6V6A1219_Original.jpg" },
   ],
   operations: [
     { name: "Vishal Dattathreya", role: "Secretary", photo: "/images/headshots/iOS.jpg" },
