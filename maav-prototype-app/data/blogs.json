@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "MAAV Competes at IARC 2024",
+      "slug": "iarc-2024-competition",
+      "excerpt": "Our team traveled to compete in the International Aerial Robotics Competition, showcasing months of hard work.",
+      "content": "Our team traveled to compete in the International Aerial Robotics Competition, showcasing months of hard work in autonomous flight systems.\n\nThe competition challenged us to demonstrate autonomous navigation, object detection, and precise flight control. Our drone successfully completed multiple mission objectives.\n\nThank you to all team members who made this possible!",
+      "author": "MAAV Team",
+      "date": "2024-08-15",
+      "image": "/images/maav-mair.png",
+      "published": true,
+      "createdAt": "2024-08-15T12:00:00.000Z",
+      "updatedAt": "2024-08-15T12:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "New Drone Frame Design Complete",
+      "slug": "new-drone-frame-design",
+      "excerpt": "The structures team has finished designing our next-generation carbon fiber frame.",
+      "content": "The structures team has finished designing our next-generation carbon fiber frame.\n\nKey improvements include:\n- Reduced weight by 15%\n- Improved vibration dampening\n- Better component accessibility\n- Optimized for manufacturing\n\nWe used SolidWorks for CAD modeling and ran extensive FEA simulations to validate the design.",
+      "author": "Structures Team",
+      "date": "2024-07-20",
+      "image": "/images/structures-thumbnail.png",
+      "published": true,
+      "createdAt": "2024-07-20T12:00:00.000Z",
+      "updatedAt": "2024-07-20T12:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Fall Recruitment Now Open",
+      "slug": "fall-recruitment-2024",
+      "excerpt": "Join MAAV this fall! We're looking for passionate students interested in autonomous systems.",
+      "content": "Join MAAV this fall! We're looking for passionate students interested in autonomous systems.\n\nNo prior experience required - just enthusiasm and willingness to learn. We have positions open on all three subteams:\n\n- Software: Computer vision, navigation, controls\n- Structures: CAD, manufacturing, testing\n- Embedded: PCB design, firmware, integration\n\nApply through our Google Form linked on the homepage!",
+      "author": "MAAV Leadership",
+      "date": "2024-09-01",
+      "image": "/images/software-thumbnail.png",
+      "published": true,
+      "createdAt": "2024-09-01T12:00:00.000Z",
+      "updatedAt": "2024-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "1768244755299",
+      "title": "test",
+      "slug": "test",
+      "excerpt": "this is a test",
+      "content": "gellooo",
+      "author": "MAAV Team",
+      "date": "2026-01-12",
+      "image": "/images/maav-mair.png",
+      "published": true,
+      "createdAt": "2026-01-12T19:05:55.299Z",
+      "updatedAt": "2026-01-12T19:05:55.299Z"
+    }
+  ]
+}
