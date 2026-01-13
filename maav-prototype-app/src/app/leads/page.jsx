@@ -5,21 +5,21 @@ import { MainFooter } from "../../components/ui/mainFooter"
 
 const leads = {
   executive: [
-    { name: "Eli Goreta", role: "President", photo: "/images/output-onlinepngtools.png", primary: true },
+    { name: "Eli Goreta", role: "President", photo: "/images/headshots/IMG_2506.jpg", primary: true },
   ],
   vicePresident: [
-    { name: "Ian Stough", role: "Vice President", photo: "/images/output-onlinepngtools.png" },
+    { name: "Ian Stough", role: "Vice President", photo: "/images/headshots/6v6A1219_Original.jpg" },
   ],
   operations: [
-    { name: "Vishal Dattathreya", role: "Secretary", photo: "/images/output-onlinepngtools.png" },
+    { name: "Vishal Dattathreya", role: "Secretary", photo: "/images/headshots/iOS.jpg" },
     { name: "Rahil Bhavan", role: "Treasurer", photo: "/images/output-onlinepngtools.png" },
-    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/output-onlinepngtools.png" },
+    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/IMG_0233.jpg" },
   ],
   teamLeads: [
     { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/output-onlinepngtools.png" },
-    { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/output-onlinepngtools.png" },
-    { name: "Dervin Tian", role: "Co-Lead", team: "Software", photo: "/images/dervin-photo.JPG" },
-    { name: "Habib Shakour", role: "Co-Lead", team: "Software", photo: "/images/output-onlinepngtools.png" },
+    { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/headshots/DSC07973.jpg" },
+    { name: "Dervin Tian", role: "Co-Lead", team: "Software", photo: "/images/headshots/dervin-photo.JPG" },
+    { name: "Habib Shakour", role: "Co-Lead", team: "Software", photo: "/images/headshots/IMG_2629.jpg" },
   ],
 }
 
