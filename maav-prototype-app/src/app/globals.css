@@ -562,6 +562,7 @@ body {
   aspect-ratio: 16 / 10;
   overflow: hidden;
   transition: transform 0.5s;
+  background: var(--color-bg-card);
 }
 
 .team-card:hover .team-card-media {
