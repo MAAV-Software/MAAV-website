@@ -54,10 +54,6 @@ const subteams = [
         title: "Utilities",
         content: "In addition to core mission tasks, our Software subteam develops tools to support and streamline the team's workflow and enhance the overall experience. The Software subteam has developed the team's website as well as the automated emailing system designed for prospective new members."
       }
-    ],
-    techStack: [
-      { name: "Python", image: "/images/Python-logo.png" },
-      { name: "C++", image: "/images/C++_Logo.png" }
     ]
   }
 ]

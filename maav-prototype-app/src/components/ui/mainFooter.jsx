@@ -14,10 +14,6 @@ export function MainFooter() {
             <p className="footer-tagline">
               Building autonomous aerial vehicles at the University of Michigan since 2009.
             </p>
-            <div className="footer-badge">
-              <span className="footer-badge-dot" />
-              <span className="footer-badge-text">Ann Arbor, MI</span>
-            </div>
           </div>
 
           <div className="footer-section">
