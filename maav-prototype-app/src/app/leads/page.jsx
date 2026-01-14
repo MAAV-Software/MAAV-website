@@ -16,7 +16,7 @@ const leads = {
     { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/IMG_0233.jpg" },
   ],
   teamLeads: [
-    { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/output-onlinepngtools.png" },
+    { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/headshots/Headshot.JPG" },
     { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/headshots/DSC07973.jpg" },
     { name: "Dervin Tian", role: "Co-Lead", team: "Software", photo: "/images/headshots/dervin-photo.JPG" },
     { name: "Habib Shakour", role: "Co-Lead", team: "Software", photo: "/images/headshots/IMG_2629.jpg" },
