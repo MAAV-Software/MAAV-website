@@ -13,7 +13,7 @@ const leads = {
   operations: [
     { name: "Vishal Dattathreya", role: "Secretary", photo: "/images/headshots/iOS.jpg", link: "https://www.linkedin.com/in/vishal-dattathreya/" },
     { name: "Rahil Bhavan", role: "Treasurer", photo: "/images/output-onlinepngtools.png", link: "https://www.linkedin.com/in/rahil-bhavan/" },
-    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/IMG_0233.jpg", link: "https://www.linkedin.com/in/sandeep-sawhney-894b12301/" },
+    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/IMG_0233.jpg", link: "http://sandeepsawhney.dev/" },
   ],
   teamLeads: [
     { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/headshots/Headshot.JPG", link: "https://www.linkedin.com/in/enrique-vezga-530118356/" },
