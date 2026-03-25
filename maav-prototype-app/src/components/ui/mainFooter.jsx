@@ -79,7 +79,9 @@ export function MainFooter() {
             {new Date().getFullYear()} Michigan Autonomous Aerial Vehicles
           </p>
           <p className="footer-credits">Go Blue</p>
-          <p className="footer-credits" style={{ marginTop: '0.5rem', fontSize: '0.7rem', opacity: 0.5 }}>
+        </div>
+        <div style={{ textAlign: 'center', paddingBottom: '1rem' }}>
+          <p className="footer-copyright" style={{ opacity: 0.4 }}>
             Made by Noah Horowitz
           </p>
         </div>
