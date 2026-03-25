@@ -33,11 +33,21 @@ export default function Sponsors() {
           </header>
 
           <div className="sponsor-pics">
-            <img className="sponsor-pic" src="/images/Ford_logo_flat.svg.png" alt="Ford" />
-            <img className="sponsor-pic" src="/images/lockheed-martin-logo.png" alt="Lockheed Martin" />
-            <img className="sponsor-pic" src="/images/Northrop-Grumman-Logo-1994.png" alt="Northrop Grumman" />
-            <img className="sponsor-pic" src="/images/Raytheon-Logo.png" alt="Raytheon" />
-            <img className="sponsor-pic" src="/images/onshape-logo.svg" alt="Onshape" />
+            <a href="https://www.ford.com" target="_blank" rel="noopener noreferrer">
+              <img className="sponsor-pic" src="/images/Ford_logo_flat.svg.png" alt="Ford" />
+            </a>
+            <a href="https://www.lockheedmartin.com" target="_blank" rel="noopener noreferrer">
+              <img className="sponsor-pic" src="/images/lockheed-martin-logo.png" alt="Lockheed Martin" />
+            </a>
+            <a href="https://www.northropgrumman.com" target="_blank" rel="noopener noreferrer">
+              <img className="sponsor-pic" src="/images/Northrop-Grumman-Logo-1994.png" alt="Northrop Grumman" />
+            </a>
+            <a href="https://www.rtx.com" target="_blank" rel="noopener noreferrer">
+              <img className="sponsor-pic" src="/images/Raytheon-Logo.png" alt="Raytheon" />
+            </a>
+            <a href="https://www.onshape.com" target="_blank" rel="noopener noreferrer">
+              <img className="sponsor-pic" src="/images/onshape-logo.svg" alt="Onshape" />
+            </a>
           </div>
         </div>
       </section>
