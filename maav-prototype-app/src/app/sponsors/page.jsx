@@ -37,6 +37,7 @@ export default function Sponsors() {
             <img className="sponsor-pic" src="/images/lockheed-martin-logo.png" alt="Lockheed Martin" />
             <img className="sponsor-pic" src="/images/Northrop-Grumman-Logo-1994.png" alt="Northrop Grumman" />
             <img className="sponsor-pic" src="/images/Raytheon-Logo.png" alt="Raytheon" />
+            <img className="sponsor-pic" src="/images/onshape-logo.svg" alt="Onshape" />
           </div>
         </div>
       </section>
