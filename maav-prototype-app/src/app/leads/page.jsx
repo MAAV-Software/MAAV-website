@@ -11,15 +11,15 @@ const leads = {
     { name: "Vishal Dattathreya", role: "Vice President", photo: "/images/headshots/vishal-photo.jpg", link: "https://www.linkedin.com/in/vishal-dattathreya/" },
   ],
   operations: [
-    { name: "Tiffany Cheung", role: "Secretary", photo: "/images/headshots/tiffany-photo.jpg", link: "https://www.linkedin.com/in/tiffany-cheung1858/" },
-    { name: "Amit Sail", role: "Treasurer", photo: "/images/amit-photo.png", link: "https://sail-nautica.github.io/" },
+    { name: "Tiffany Cheung", role: "Secretary", photo: "/images/headshots/tiffany-photo.png", link: "https://www.linkedin.com/in/tiffany-cheung1858/" },
+    { name: "Amit Sail", role: "Treasurer", photo: "/images/headshots/amit-photo.png", link: "https://sail-nautica.github.io/" },
     { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/sandeep-photo.jpg", link: "http://sandeepsawhney.dev/" },
   ],
   teamLeads: [
     { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/headshots/enrique-photo.JPG", link: "https://www.linkedin.com/in/enrique-vezga-530118356/" },
     { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/headshots/jamie-photo.jpg", link: "https://www.linkedin.com/in/james-spielman/" },
     { name: "Dervin Tian", role: "Team Lead", team: "Software", photo: "/images/headshots/dervin-photo.JPG", link: "https://dervintian.github.io/" },
-    { name: "Vincent Chung", role: "Team Lead", team: "Perception", photo: "/images/headshots/output-onlinepngtools.png", link: "https://www.linkedin.com/in/vincent-c-59b33b234/" },
+    { name: "Vincent Chung", role: "Team Lead", team: "Perception", photo: "/images/output-onlinepngtools.png", link: "https://www.linkedin.com/in/vincent-c-59b33b234/" },
   ],
 }
 
