@@ -5,21 +5,21 @@ import { MainFooter } from "../../components/ui/mainFooter"
 
 const leads = {
   executive: [
-    { name: "Eli Goreta", role: "President", photo: "/images/headshots/IMG_2506.jpg", link: "https://www.linkedin.com/in/eli-goreta-044214288/" },
+    { name: "Ian Stough", role: "President", photo: "/images/headshots/ian-photo.png", link: "https://www.linkedin.com/in/ian-stough-8336a6322/" },
   ],
   vicePresident: [
-    { name: "Ian Stough", role: "Vice President", photo: "/images/headshots/6V6A1219_Original.jpg", link: "https://www.linkedin.com/in/ian-stough-8336a6322/" },
+    { name: "Vishal Dattathreya", role: "Vice President", photo: "/images/headshots/vishal-photo.jpg", link: "https://www.linkedin.com/in/vishal-dattathreya/" },
   ],
   operations: [
-    { name: "Vishal Dattathreya", role: "Secretary", photo: "/images/headshots/iOS.jpg", link: "https://www.linkedin.com/in/vishal-dattathreya/" },
-    { name: "Rahil Bhavan", role: "Treasurer", photo: "/images/output-onlinepngtools.png", link: "https://www.linkedin.com/in/rahil-bhavan/" },
-    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/IMG_0233.jpg", link: "http://sandeepsawhney.dev/" },
+    { name: "Tiffany Cheung", role: "Secretary", photo: "/images/headshots/tiffany-photo.jpg", link: "https://www.linkedin.com/in/tiffany-cheung1858/" },
+    { name: "Amit Sail", role: "Treasurer", photo: "/images/amit-photo.png", link: "https://sail-nautica.github.io/" },
+    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/sandeep-photo.jpg", link: "http://sandeepsawhney.dev/" },
   ],
   teamLeads: [
-    { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/headshots/Headshot.JPG", link: "https://www.linkedin.com/in/enrique-vezga-530118356/" },
-    { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/headshots/DSC07973.jpg", link: "https://www.linkedin.com/in/james-spielman/" },
-    { name: "Dervin Tian", role: "Co-Lead", team: "Software", photo: "/images/headshots/dervin-photo.JPG", link: "https://dervintian.github.io/" },
-    { name: "Habib Shakour", role: "Co-Lead", team: "Software", photo: "/images/headshots/IMG_2629.jpg", link: "https://www.linkedin.com/in/habib-shakour-7b76892b7/" },
+    { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/headshots/enrique-photo.JPG", link: "https://www.linkedin.com/in/enrique-vezga-530118356/" },
+    { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/headshots/jamie-photo.jpg", link: "https://www.linkedin.com/in/james-spielman/" },
+    { name: "Dervin Tian", role: "Team Lead", team: "Software", photo: "/images/headshots/dervin-photo.JPG", link: "https://dervintian.github.io/" },
+    { name: "Vincent Chung", role: "Team Lead", team: "Perception", photo: "/images/headshots/output-onlinepngtools.png", link: "https://www.linkedin.com/in/vincent-c-59b33b234/" },
   ],
 }
 
