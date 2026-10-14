@@ -36,9 +36,6 @@ export default function Sponsors() {
             <a href="https://www.ford.com" target="_blank" rel="noopener noreferrer">
               <img className="sponsor-pic" src="/images/Ford_logo_flat.svg.png" alt="Ford" />
             </a>
-            <a href="https://www.lockheedmartin.com" target="_blank" rel="noopener noreferrer">
-              <img className="sponsor-pic" src="/images/lockheed-martin-logo.png" alt="Lockheed Martin" />
-            </a>
             <a href="https://www.northropgrumman.com" target="_blank" rel="noopener noreferrer">
               <img className="sponsor-pic" src="/images/Northrop-Grumman-Logo-1994.png" alt="Northrop Grumman" />
             </a>
