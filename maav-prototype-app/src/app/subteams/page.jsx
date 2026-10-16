@@ -14,7 +14,7 @@ const subteams = [
     sections: [
       {
         title: "The Frame",
-        content: "The Structures team is responsible for the build, design, and testing of the drone frame. To design, we use SolidWorks to model and analyze the quadcopter's custom on and off the shelf components. To build, we use carbon fiber layups, machining, and additive manufacturing processes. To test, we fly (and crash) the vehicle at the MAir outdoor test facility to ensure structural integrity."
+        content: "Our Structures subteam primarily handles all frame design and manufacturing for our competition drones. This involves material research, computer aided design, waterjetting, 3D printing, mounting tool selection, carbon fiber layups, and repetitive iteration of design chnages. Additionally, the structures team designs and manufactures test rigs needed by our embedded and software teams to test the drones."
       }
     ]
   },
@@ -25,13 +25,12 @@ const subteams = [
     color: "#FFCB05",
     image: "/images/embedded-thumbnail.png",
     sections: [
-      {
-        title: "Circuitry",
-        content: "The embedded systems subteam prints out custom circuit boards (PCBs) to provide platforms for the control software to run and communicate with the navigation software, as well as manage the safety of the batteries, motors, and operators. We design with Altium Designer and Eagle, along with the use of off-the-shelf parts."
+      { title: "Circuitry", 
+        content: "The Embedded Systems subteam designs and builds custom printed circuit boards (PCBs) to integrate the electrical components of our competition drones. We research components based on design constraints, develop electrical systems, and manage power distribution to ensure reliable and safe operation. Using tools such as Altium Designer and Eagle, we design custom boards, including our I/O board for the Raspberry Pi CM5, alongside integrating off-the-shelf components." 
       },
       {
         title: "Integration",
-        content: "The embedded system team is considered as the bridge between the hardware and the software. More specifically, ES designs and builds the vehicle's electrical hardware and integrates these components into a cohesive product."
+        content: "The Embedded Systems subteam serves as the bridge between hardware and software, bringing together the electrical systems and firmware that power our competition drones. We configure firmware, integrate hardware components, and debug system-level issues to ensure reliable communication between subsystems. Through soldering, testing, and system integration, we transform individual components into a cohesive, functional vehicle."
       }
     ]
   },
