@@ -5,46 +5,72 @@ import { MainFooter } from "../../components/ui/mainFooter"
 
 const leads = {
   executive: [
-    { name: "Eli Goreta", role: "President", photo: "/images/headshots/IMG_2506.jpg", link: "https://www.linkedin.com/in/eli-goreta-044214288/" },
+    { name: "Ian Stough", role: "President", photo: "/images/headshots/ian-photo.png",
+      linkedin: "https://www.linkedin.com/in/ian-stough-8336a6322/" },
   ],
   vicePresident: [
-    { name: "Ian Stough", role: "Vice President", photo: "/images/headshots/6V6A1219_Original.jpg", link: "https://www.linkedin.com/in/ian-stough-8336a6322/" },
+    { name: "Vishal Dattathreya", role: "Vice President", photo: "/images/headshots/vishal-photo.jpg",
+      linkedin: "https://www.linkedin.com/in/vishal-dattathreya/" },
   ],
   operations: [
-    { name: "Vishal Dattathreya", role: "Secretary", photo: "/images/headshots/iOS.jpg", link: "https://www.linkedin.com/in/vishal-dattathreya/" },
-    { name: "Rahil Bhavan", role: "Treasurer", photo: "/images/output-onlinepngtools.png", link: "https://www.linkedin.com/in/rahil-bhavan/" },
-    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/IMG_0233.jpg", link: "http://sandeepsawhney.dev/" },
+    { name: "Tiffany Cheung", role: "Secretary", photo: "/images/headshots/tiffany-photo.png",
+      github: "https://github.com/tiiff-c", linkedin: "https://www.linkedin.com/in/tiffany-cheung1858/"  },
+    { name: "Amit Sail", role: "Treasurer", photo: "/images/headshots/amit-photo.png",
+      linkedin: "https://www.linkedin.com/in/amit-sail/", website: "https://sail-nautica.github.io/" },
+    { name: "Sandeep Sawhney", role: "Public Relations", photo: "/images/headshots/sandeep-photo.jpg",
+      github: "https://github.com/SandeepSawhney2015", linkedin: "https://www.linkedin.com/in/sandeep-sawhney-894b12301?utm_source=share_via&utm_content=profile&utm_medium=member_ios", website: "http://sandeepsawhney.dev/" },
   ],
   teamLeads: [
-    { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/headshots/Headshot.JPG", link: "https://www.linkedin.com/in/enrique-vezga-530118356/" },
-    { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/headshots/DSC07973.jpg", link: "https://www.linkedin.com/in/james-spielman/" },
-    { name: "Dervin Tian", role: "Co-Lead", team: "Software", photo: "/images/headshots/dervin-photo.JPG", link: "https://dervintian.github.io/" },
-    { name: "Habib Shakour", role: "Co-Lead", team: "Software", photo: "/images/headshots/IMG_2629.jpg", link: "https://www.linkedin.com/in/habib-shakour-7b76892b7/" },
+    { name: "Enrique Vezga", role: "Team Lead", team: "Structures", photo: "/images/headshots/enrique-photo.JPG",
+      linkedin: "https://www.linkedin.com/in/enrique-vezga-530118356/" },
+    { name: "James Spielman", role: "Team Lead", team: "Embedded Systems", photo: "/images/headshots/jamie-photo.jpg",
+      linkedin: "https://www.linkedin.com/in/james-spielman/" },
+    { name: "Dervin Tian", role: "Team Lead", team: "Software", photo: "/images/headshots/dervin-photo.JPG",
+      website: "https://dervintian.github.io/" },
+    { name: "Vincent Chung", role: "Team Lead", team: "Perception", photo: "/images/output-onlinepngtools.png",
+      linkedin: "https://www.linkedin.com/in/vincent-c-59b33b234/" },
   ],
 }
 
+// Display order of the icons + where each icon file lives
+const SOCIALS = [
+  { key: "website",  label: "Personal website", icon: "/images/icons/website.svg" },
+  { key: "github",   label: "GitHub",           icon: "/images/icons/github.svg" },
+  { key: "linkedin", label: "LinkedIn",         icon: "/images/icons/linkedin.svg" },
+]
+
 function LeadCard({ lead, delay = 0 }) {
-  const cardContent = (
+  const available = SOCIALS.filter((s) => lead[s.key])
+
+  return (
     <div
       className={`lead-card scroll-animate ${lead.primary ? 'lead-primary' : ''}`}
-      style={{ transitionDelay: `${delay * 0.1}s`, cursor: lead.link ? 'pointer' : 'default' }}
+      style={{ transitionDelay: `${delay * 0.1}s` }}
     >
       <img className="lead-card-photo" src={lead.photo} alt={lead.name} />
       <h3 className="lead-card-name">{lead.name}</h3>
       <span className="lead-card-role">{lead.role}</span>
       {lead.team && <span className="lead-card-team">{lead.team}</span>}
+
+      {available.length > 0 && (
+        <div className="lead-card-socials">
+          {available.map((s) => (
+            <a
+              key={s.key}
+              href={lead[s.key]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lead-social-link"
+              aria-label={`${lead.name}'s ${s.label}`}
+              title={s.label}
+            >
+              <span className="lead-social-icon" style={{ '--icon': `url(${s.icon})` }} />
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   )
-
-  if (lead.link) {
-    return (
-      <a href={lead.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-        {cardContent}
-      </a>
-    )
-  }
-
-  return cardContent
 }
 
 export default function Leads() {

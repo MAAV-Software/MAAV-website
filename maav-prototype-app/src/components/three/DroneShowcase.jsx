@@ -19,7 +19,7 @@ const sections = [
     title: 'SOFTWARE',
     number: '01',
     subtitle: 'The Brain',
-    description: 'Jetson Xavier NX runs our computer vision and autonomous navigation algorithms. Real-time object detection, path planning, and flight control.',
+    description: 'Raspberry Pi CM5 runs our computer vision and autonomous navigation algorithms. Real-time object detection, path planning, and flight control.',
     camera: { position: [2, 1.8, 0], target: [-0.3, 1.7, 0] },
     color: '#00ff88',
     highlight: 'jetson'

@@ -97,7 +97,7 @@ export default function BlogPost() {
             <span className="blog-post-author">{post.author}</span>
             <span className="blog-post-divider">|</span>
             <time className="blog-post-date">
-              {new Date(post.date).toLocaleDateString('en-US', {
+              {new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
