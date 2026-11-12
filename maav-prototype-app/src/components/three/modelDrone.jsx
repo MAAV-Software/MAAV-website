@@ -99,7 +99,7 @@ export function Drone(props) {
     const carbonTexture = createCarbonFiberTexture()
     const carbonNormal = createCarbonFiberNormal()
 
-    // Jetson Xavier NX - dark green PCB with gold traces look
+    // Raspberry Pi CM5 - dark green PCB with gold traces look
     const jetsonMaterial = new THREE.MeshStandardMaterial({
       color: '#1a3d1a',
       metalness: 0.3,
@@ -181,7 +181,7 @@ export function Drone(props) {
 
   return (
     <group {...props} dispose={null}>
-      {/* Jetson Xavier NX */}
+      {/* Raspberry Pi CM5 */}
       <mesh
         geometry={nodes.Jetson_Xavier_NX_DevKit_LQ.geometry}
         material={droneMateria.jetson}
